@@ -4,8 +4,150 @@
 
 .address-details-container {
   display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+.from-address-item {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.to-address-item {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.request-id-item {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.address-item-title {
+  margin-bottom: 0;
+  align-self: flex-start;
+  font-weight: bold;
+}
+
+.from-address {
+  font-size: 14px;
+  margin-top: 0;
+  padding-top: 4px;
+}
+
+.arrow-icon {
+  font-size: 38px;
+  color: white;
+  background-color: #ed5643;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px rgb(190, 189, 189);
+}
+
+.to-address {
+  font-size: 14px;
+  margin-top: 0;
+  padding-top: 4px;
+  align-self: flex-start;
+}
+
+.request-id {
+  font-size: 16px;
+  margin-top: 0;
+  padding-top: 4px;
+  align-self: flex-start;
+  color: #ed5643;
+  font-weight: bold;
 }
 
 .move-details-container {
   display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.icon {
+  font-size: 28px;
+  color: #ed5643;
+}
+
+.detail-text {
+  margin-left: 10px;
+}
+
+.pencil-icon {
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.view-more-button {
+  border: 2px solid #ed5643;
+  background-color: #ffffff;
+  margin-right: 10px;
+  padding: 8px 20px;
+  outline: none;
+  border-radius: 6px;
+  color: #ed5643;
+  cursor: pointer;
+  width: 160px;
+}
+
+.quotes-button {
+  background-color: #ed5643;
+  color: #ffffff;
+  padding: 8px 20px;
+  outline: none;
+  border-radius: 6px;
+  margin-right: 10px;
+  border: none;
+  border: 2px solid #ed5643;
+  cursor: pointer;
+  width: 160px;
+}
+
+.disclaimer-container {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.disclaimer-icon {
+  color: #ed5643;
+  margin-right: 6px;
+}
+
+span {
+  font-weight: 400;
+  margin-left: 4px;
+}
+
+input[type="checkbox"]:checked {
+  accent-color: #ed5643;
+  margin-right: 10px;
+}
+
+hr {
+  border: 1px solid rgb(216, 209, 209);
+  margin: 30px 0px;
 }
