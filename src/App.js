@@ -1,7 +1,6 @@
 import { Component } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./components/Home";
-import Navbar from "./components/Navbar";
 import Profile from "./components/Profile";
 
 class App extends Component {
@@ -9,7 +8,6 @@ class App extends Component {
     return (
       <>
         <BrowserRouter>
-          <Navbar />
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/profile" component={Profile} />

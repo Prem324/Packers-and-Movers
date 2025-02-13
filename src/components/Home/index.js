@@ -1,9 +1,12 @@
 import React from "react";
-
+import Navbar from "../Navbar";
+import MyMoves from "../MyMoves";
+import "./index.css";
 const Home = () => {
   return (
-    <div>
-      <h1>Home</h1>
+    <div className="home-container">
+      <Navbar />
+      <MyMoves />
     </div>
   );
 };
