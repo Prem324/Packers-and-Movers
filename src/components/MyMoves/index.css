@@ -1,3 +1,11 @@
 .my-moves-container {
   width: 80%;
 }
+
+.address-details-container {
+  display: flex;
+}
+
+.move-details-container {
+  display: flex;
+}
