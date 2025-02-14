@@ -1,16 +1,17 @@
 import { Component } from "react";
 import React from "react";
-import { FaCircleArrowRight } from "react-icons/fa6";
+import { FaArrowRightLong } from "react-icons/fa6";
 import { IoMdHome } from "react-icons/io";
 import { GiPathDistance } from "react-icons/gi";
 import { FaBoxes } from "react-icons/fa";
 import { TbCalendarTime } from "react-icons/tb";
 import { TiPencil } from "react-icons/ti";
 import { IoWarning } from "react-icons/io5";
+import MoreDetails from "../MoreDetails";
 import "./index.css";
 
 class MyMoves extends Component {
-  state = { dataList: [] };
+  state = { dataList: [], isVisible: true };
   componentDidMount() {
     this.getCustomerEstimateFlow();
   }
@@ -27,8 +28,12 @@ class MyMoves extends Component {
   };
 
   render() {
-    const { dataList } = this.state;
-    console.log(dataList);
+    const { dataList, isVisible } = this.state;
+    const onViewMore = (id) => {
+      this.setState((prevState) => ({
+        isVisible: !prevState.isVisible,
+      }));
+    };
     return (
       <div className="my-moves-container">
         <h1>My Moves</h1>
@@ -41,7 +46,7 @@ class MyMoves extends Component {
                   <p className="from-address">{eachItem.moving_from}</p>
                 </li>
                 <li className="address-item">
-                  <FaCircleArrowRight className="arrow-icon" />
+                  <FaArrowRightLong className="arrow-icon" />
                 </li>
                 <li className="to-address-item">
                   <p className="address-item-title">To</p>
@@ -71,11 +76,14 @@ class MyMoves extends Component {
                   <TiPencil className="pencil-icon" />
                 </li>
                 <li className="detail-item">
-                  <input type="checkbox" checked />
+                  <input type="checkbox" />
                   Is flexible
                 </li>
                 <li className="buttons-container">
-                  <button className="view-more-button">
+                  <button
+                    className="view-more-button"
+                    onClick={() => onViewMore(eachItem.estimate_id)}
+                  >
                     View move details
                   </button>
                   <button className="quotes-button">Quotes Awaiting</button>
@@ -88,7 +96,8 @@ class MyMoves extends Component {
                   Please update your move date before two days of shifting
                 </span>
               </p>
-              <hr />
+              {!isVisible && <hr />}
+              {isVisible && <MoreDetails moreDetails={eachItem} />}
             </div>
           ))}
         </div>

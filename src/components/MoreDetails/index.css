@@ -1,0 +1,99 @@
+.view-more-details-container {
+  margin-top: 40px;
+}
+.additional-info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-heading {
+  font-size: 16px;
+}
+
+.data-text {
+  color: rgb(114, 111, 111);
+  margin-top: 0;
+  padding-top: 4px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.edit-button {
+  padding: 6px 10px;
+  background-color: black;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 12px;
+}
+.house-details-container {
+  margin-top: 10px;
+}
+.house-details-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sub-heading {
+  font-size: 16px;
+  color: #ed5643;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.house-details-list {
+  display: flex;
+  padding-left: 0;
+  margin-top: 0;
+  padding-top: 0;
+  justify-content: space-between;
+}
+.house-details-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 180px;
+  padding-top: 0;
+  margin-top: 0;
+}
+.data-text-heading {
+  font-weight: bold;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  padding-top: 4px;
+  margin-top: 0;
+}
+.inventory-details-container {
+  margin-top: 10px;
+}
+.inventory-details-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inventory-details-list {
+  padding-left: 0;
+}
+.inventory-details-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.inventory-name {
+  background-color: rgb(214, 212, 212);
+  padding: 6px;
+  color: #ed5643;
+  font-weight: bold;
+  padding-left: 30px;
+}
+.category-length {
+  background-color: #ed5643;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 4px;
+  font-size: 14px;
+  font-weight: bold;
+}
