@@ -81,6 +81,38 @@ const MoreDetails = (props) => {
                   {eachInventory.category.length}
                 </span>
               </p>
+              <div className="inventories-list">
+                {eachInventory.category.map((eachCategory) => (
+                  <div key={eachCategory.id}>
+                    <p className="category-name">{eachCategory.displayName}</p>
+                    <div>
+                      {eachCategory.items.map((eachItem) => (
+                        <div key={eachItem.id}>
+                          {eachItem.qty !== 0 && (
+                            <div className="category-item">
+                              <div>
+                                <p className="item-name">
+                                  {eachItem.displayName}
+                                </p>
+                                {eachItem.type.map((eachType) => (
+                                  <div key={eachType.id}>
+                                    {eachType.selected === true && (
+                                      <p className="item-type">
+                                        {eachType.option}
+                                      </p>
+                                    )}
+                                  </div>
+                                ))}
+                              </div>
+                              <p className="item-quantity">{eachItem.qty}</p>
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           ))}
         </ul>

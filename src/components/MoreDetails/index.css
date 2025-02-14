@@ -97,3 +97,39 @@
   font-size: 14px;
   font-weight: bold;
 }
+
+.inventories-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  margin-right: 40px;
+}
+.category-name {
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.item-name {
+  font-size: 16px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.item-type {
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 0;
+  padding-top: 6px;
+}
+.item-quantity {
+  font-weight: bold;
+}
