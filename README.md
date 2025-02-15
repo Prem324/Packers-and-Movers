@@ -1,10 +1,20 @@
-# Title
-
-Packers and Movers
-
-## Objective
+# Packers and Movers
 
 Consume the API and try to generate the UI
+
+> Demo
+
+- Vercel: https://prems-packers-and-movers.vercel.app/
+
+### Usage
+
+```
+git clone <github repository link>  //to clone the github repository
+npm install                         //to install all the dependencies required to run application
+npm start                           //to start the application
+```
+
+**Note:** Node should be greater than or equal to **14.0** to run the Application.
 
 ## Tech Stack
 
