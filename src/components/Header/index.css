@@ -1,0 +1,24 @@
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  background-image: radial-gradient(
+    #ffffff,
+    rgb(237, 208, 243),
+    rgb(208, 241, 243)
+  );
+}
+
+.header-icon {
+  width: 100px;
+  height: 60px;
+}
+
+.header-name {
+  font-size: 30px;
+  padding: 0px 10px;
+  font-family: "Caveat";
+  font-weight: bold;
+}

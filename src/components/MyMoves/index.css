@@ -1,5 +1,10 @@
 .my-moves-container {
   width: 80%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.my-moves-heading {
+  font-size: 20px;
 }
 
 .address-details-container {
